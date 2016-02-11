@@ -17,6 +17,7 @@ body {
 
 h1 {
 	font-size: 60px;
+	margin-bottom: 0px;
 }
 
 h4 {
@@ -30,7 +31,7 @@ h4 {
 	height: 50px;
 	margin: auto;
 	padding-top: 0px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 
@@ -83,25 +84,29 @@ h4 {
 	display: block;
 }
 
-#container {
-	width: 100%;
+#location {
+  color: blue;
 }
 
-#back_btn {
-	position: relative;
-	float: left;
+#location a {
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline-block;
 }
 
-#finder {
-	position: relative;
-	float: center;
+#loc {
+  font-size: 16px;
 }
+
+#change_loc {
+  font-size: 10px;
+}
+
 #foodporn {
 
 	height: 250px;
 	width: 250px;
 	margin: auto;
-	margin-top: 0px;
 	margin-bottom: 10px;
 }
 
@@ -109,18 +114,31 @@ h4 {
 	height: 250px;
 	width: 250px;
 	margin: auto;
-	margin-top: 5px;
+}
+
+#finder .btn-lg {
+    color: #FFF;
+    background-color: #777;
+    border: 0px;
+}
+#finder .btn-block {
+    box-shadow: none;
+		margin: auto;
+		margin-bottom: 25px;
+		width: 215px;
 
 }
 
+/*
 #spin {
 	height: 25px;
 	width: 250px;
 	margin-bottom: 25px;
 
-}
+}*/
 
 form {
+
 	margin: auto;
 }
 
@@ -132,17 +150,260 @@ input {
 	visibility: hidden;
 }
 
-.finder a {
-	text-decoration: none;
-	color: white;
-}
-
-#bmk_confirm {
-	width: 100px;
-}
-
 /*
 .active {
 	visibility: visible;
+} */
+
+.glyphicon.glyphicon-chevron-left {
+    font-size: 45px;
+		color: #FFF;
 }
-*/
+
+.glyphicon.glyphicon-chevron-left:hover {
+    color: #5e5e5e;
+}
+
+/* navbar */
+.navbar-inverse {
+    background-color: #d83c3c;
+		border-color: #ff8888;
+    /*border-color: #ff8888;*/
+}
+/* title */
+.navbar-inverse .navbar-brand {
+    color: #fff;
+		font-weight: bold;
+		font-size: 40px;
+
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+    color: #5E5E5E;
+}
+
+/* links (menu options) */
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff; /* white */
+		font-size: 20px;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #eee;
+		background-color: #f41100;
+    /*background-color: #E7E7E7;*/
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-inverse .navbar-nav > .dropdown > a:hover .caret,
+.navbar-inverse .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-inverse .navbar-nav > .open > a .caret,
+.navbar-inverse .navbar-nav > .open > a:hover .caret,
+.navbar-inverse .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-inverse .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #fff;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #000;
+    }
+}
+
+
+/*
+.dropdown-item {
+	font-color: white;
+	background-color: tomato;
+}
+
+.dropdown-item:hover {
+	font-color: black;
+	background-color: tomato;
+}*/
+
+<<<<<<< HEAD
+=======
+.form-control input[type="text"] {
+    margin-bottom: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form-control {
+    position: relative;
+    font-size: 16px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    height: auto;
+    padding: 10px;
+		margin: 0 auto;
+		width: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+>>>>>>> bd1c570703a903b17a7b0387d3e1aa83a606fbdb
+
+
+.cf:before, .cf:after{
+   content:"";
+   display:table;
+}
+
+.cf:after{
+   clear:both;
+}
+
+.cf{
+   zoom:1.25;
+}
+
+/* Form wrapper styling */
+.search-wrapper {
+width: 240px;
+margin: 45px auto 50px auto;
+box-shadow: 0 1px 1px rgba(0, 0, 0, .4) inset, 0 1px 0 rgba(255, 255, 255, .2);
+}
+
+/* Form text input */
+
+.search-wrapper input {
+width: 168px;
+height: 40px;
+padding: 10px 5px;
+float: left;
+font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+border: 0;
+background: #EEE;
+border-radius: 3px 0 0 3px;
+}
+
+.search-wrapper input:focus {
+   outline: 0;
+   background: #fff;
+   box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+
+.search-wrapper input::-webkit-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.search-wrapper input:-moz-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+}
+
+.search-wrapper input:-ms-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+}
+
+/* Explore the crave button */
+.explore-button {
+    background-color: #d83c3c;
+		margin: 5px;
+    border: none;
+    color: white;
+    padding: 15px 85px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+		font-color: #fff;
+}
+
+.explore-button:hover {
+	  background-color: #d83;
+}
+
+.explore-link {
+	color: #eee;
+=======
+}
+
+/* Form submit button */
+.search-wrapper button {
+overflow: visible;
+position: relative;
+float: right;
+border: 0;
+padding: 0;
+cursor: pointer;
+height: 40px;
+width: 72px;
+font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+color: white;
+text-transform: uppercase;
+background: #D83C3C ;
+border-radius: 0 3px 3px 0;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+}
+
+.search-wrapper button:hover{
+   background: #e54040 ;
+}
+
+.search-wrapper button:active,
+.search-wrapper button:focus{
+   background: #c42f2f ;
+   outline: 0;
+}
+
+.search-wrapper button:before { /* left arrow */
+   content: '';
+   position: absolute;
+   border-width: 8px 8px 8px 0;
+   border-style: solid solid solid none;
+   border-color: transparent #d83c3c  transparent;
+   top: 12px;
+   left: -6px;
+}
+
+.search-wrapper button:hover:before{
+   border-right-color: #e54040 ;
+}
+
+.search-wrapper button:focus:before,
+.search-wrapper button:active:before{
+       border-right-color: #c42f2f ;
+}
+
+.search-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+   border: 0;
+   padding: 0;
+}

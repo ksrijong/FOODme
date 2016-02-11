@@ -1,0 +1,80 @@
+/*left and right buttons */
+#swipe { 
+	display: inline-block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#bmk_confirm { 
+	visibility: hidden;
+	background-color: red;
+	color: white;
+}
+
+.move { 
+	height: 50px;
+	width: 50px;
+	background-color: tomato;
+	border: none;
+	color: white;
+	font-style: bold;
+}
+
+#book_button { 
+	height: 75px;
+	width: 100px;
+	background-color: white;
+	color: tomato;
+	font-size: 18px;
+	text-align: center;
+	border: 1px solid tomato;
+}
+
+#end { 
+	visibility: hidden;
+	margin: 10px;
+}
+
+#faces div { 
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#ht_type div { 
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+#hashtags div { 
+	margin-right: 5px;
+}
+
+.ups div { 
+	display: inline-block;
+
+	color: black;
+	width: 50px;
+}
+
+
+
+#dish_img { 
+	height: 200px;
+	width: 200px;
+}
+
+.downs div { 
+	display: inline-block;
+
+	color: black;
+	width: 50px;
+}
+
+#dishIMG { 
+	height: 250px;
+	width: 250px;
+}
+
+.thumbs { 
+	width: 20px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel='stylesheet' href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link type = "text/css" rel="stylesheet" href="css/style.css">
+  <link type = "text/css" rel="stylesheet" href="css/navbarstyle.css">
+  <link type = "text/css" rel="stylesheet" href="css/explore.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="function.js"></script>
+
+  <title>FOODme</title>
+</head>
+
+  <body>
+
+    <!-- Menu Bar -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="index.html">FOODme</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-star"></span>&nbsp;About</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-globe"></span>&nbsp;Explore</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;My Profile<span class="caret"></span></a>
+              <ul class="dropdown-menu" style="">
+                <li><a href="/bookmarks" class="dropdown-item"><span class="glyphicon glyphicon-bookmark"></span>&nbsp;Bookmarks</a></li>
+                <li><a href="#" class="dropdown-item"><i class="fa fa-users"></i>&nbsp;Friends</a></li>
+                <li><a href="#" class="dropdown-item"><span class="glyphicon glyphicon-cog"></span>&nbsp; Settings</a></li>
+                <li><a href="login.html" class="dropdown-item"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <div id = "container">
+    <div id = "finder">
+      <form action="/search.html" class="search-wrapper cf">
+        <input type="text" placeholder="Search for food here..." required="">
+        <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
+      </form>
+    </div> <!--end of finder-->
+  </div> <!--end of container-->
+
+   <div id = "container">
+
+		<div id = "finder">
+
+      <a href="explore.html"><button id="spin" class="explore-button">Explore the Crave</button></a>
+      <div id = "location">
+        <p id = "loc">San Diego, CA</p>
+        <a id = "change_loc">change location?</a>
+      </div>
+		</div> <!--end of finder-->
+
+
+	</div> <!--end of container-->
+
+  </body>
+</html>
