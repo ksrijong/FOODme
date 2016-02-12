@@ -46,14 +46,14 @@
 }
 
 #hashtags div { 
-	margin-right: 5px;
+	margin-right: 1px;
 }
 
 .ups div { 
 	display: inline-block;
 
 	color: black;
-	width: 75px;
+	width: 50px;
 }
 
 
@@ -68,7 +68,7 @@
 	display: inline-block;
 
 	color: black;
-	width: 75px;
+	width: 50px;
 }
 
 #dishIMG { 
