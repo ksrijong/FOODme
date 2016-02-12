@@ -1,0 +1,28 @@
+{
+	"bookmarks": [
+		{
+      "restaurantName": "Extraordinary Desserts",
+			"dishName": "Cookie Sandwich Tower",
+      "address": "Downtown, San Diego, CA",
+			"imageURL": "food/cookie_sandwich.jpeg"
+		},
+		{
+      "restaurantName": "Really Cool Thai Place",
+			"dishName": "Coconut Fireball Curry",
+      "address": "Convoy, San Diego, CA",
+			"imageURL": "food/curry.jpg"
+		},
+    {
+      "restaurantName": "Phil's BBQ",
+			"dishName": "World Famous Ribs",
+      "address": "San Diego, CA",
+			"imageURL": "food/ribs.jpg"
+    },
+		{
+      "restaurantName": "Phil's BBQ NUMBER 2",
+			"dishName": "World Famous Ribs",
+      "address": "San Diego, CA",
+			"imageURL": "food/ribs.jpg"
+    }
+	]
+}

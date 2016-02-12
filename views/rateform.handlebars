@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel = "stylesheet" href = "css/rate.css">
+		<!--for three emojis in rating-->
+		<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel='stylesheet' href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
   <link type = "text/css" rel="stylesheet" href="css/style.css">
+  <link type = "text/css" rel="stylesheet" href="css/bookmarks.css">
   <link type = "text/css" rel="stylesheet" href="css/navbarstyle.css">
   <link type = "text/css" rel="stylesheet" href="css/explore.css">
 
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="function.js"></script>
+  <script type="text/javascript" src="js/explore.js"></script>
 
   <title>FOODme</title>
-</head>
+	</head>
+	
+	<body>
 
-  <body>
-
-    <!-- Menu Bar -->
-    <nav class="navbar navbar-inverse">
+		<nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -29,8 +32,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-
-          <a class="navbar-brand" href="/homepage">FOODme</a>
+          <a class="nav pull-left"><span class="glyphicon glyphicon-chevron-left" onclick="goBack()"></span></a>
+            <script>
+              function goBack() {
+                window.history.back();
+              }
+            </script>
+          <a class="navbar-brand" href="/exp">FOODme</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
@@ -48,30 +56,39 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> <!--end of menu-->
+		<form>
+			<h4>Dish Rating</h4>
+				<h5 id = "dname"></h5> 
+				<h5 id = 'drest'></h5>
+				<p>This dish made me feel...</p>
+			<!--reaction to dishes-->
+			<div class = "emoji">
+				<i class = "em em-disappointed" id = "ab"></i>
+				Disappointed
+			</div>
+			<div class = 'emoji'>
+				<i class = "em em-confused" id = "ab"></i>
+				Meh
+			</div>
+			<div class = 'emoji'>
+				<i class = "em em-smiley" id = "ab"></i>
+				Happy
+			</div>
+			<!--hashtag ratings-->
+			<div id = "up_tags">
+				<p>UPS: list three good things about this dish, separate each using a common</p> <i>example: #awesome, #yummy</i>
+				<input type = "text" id = "ui"></input>
+			</div>
+			<div id = "down_tags">
+				<p>DOWNS: list three bad things about this dish, separate each using a common</p> <i>example: #disgusting, #spicy</i>
+				<input type = "text" id = "di"></input>
+			</div>
 
-  <div id = "container">
-    <div id = "finder">
-      <form action="/search.html" class="search-wrapper cf">
-        <input type="text" placeholder="Search for food here..." required="">
-        <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
-      </form>
-    </div> <!--end of finder-->
-  </div> <!--end of container-->
-
-   <div id = "container">
-
-		<div id = "finder">
-
-      <a href="/exp"><button id="spin" class="explore-button">Explore the Crave</button></a>
-      <div id = "location">
-        <p id = "loc">San Diego, CA</p>
-        <a id = "change_loc">change location?</a>
-      </div>
-		</div> <!--end of finder-->
-
-
-	</div> <!--end of container-->
-
-  </body>
+			<div id = "submit">
+				<a href = '/'><button id = "submitBtn">SUBMIT</button></a>
+			</div>
+			
+		</form>
+	</body>
 </html>

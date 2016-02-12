@@ -1,0 +1,21 @@
+#ab { 
+	width: 100px;
+	height: 100px;
+	opacity: 0.5;
+}
+
+.emoji { 
+	display: inline-block;
+}
+
+#ab:hover { 
+	opacity: 1;
+}
+
+#submit { 
+	margin-top: 10px;
+}
+
+form { 
+	text-align: center;
+}

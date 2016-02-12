@@ -53,7 +53,7 @@
 	display: inline-block;
 
 	color: black;
-	width: 50px;
+	width: 100px;
 }
 
 
@@ -61,13 +61,14 @@
 #dish_img { 
 	height: 200px;
 	width: 200px;
+	margin-top: 10px;
 }
 
 .downs div { 
 	display: inline-block;
 
 	color: black;
-	width: 50px;
+	width: 100px;
 }
 
 #dishIMG { 
