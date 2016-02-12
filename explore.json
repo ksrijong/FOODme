@@ -1,0 +1,63 @@
+{
+	"dishes": [
+
+		{ 
+			"id": "0",
+			"name": "burger",
+			"restaurant": "Burger Lounge",
+			"imgURL": "food/burger.jpg", 
+			"dis": "6",
+			"meh": "5",
+			"yay": "12"
+		},
+		{ 
+			"id": "1",
+			"name": "cookie_sandwich",
+			"restaurant": "Baked Bear",
+			"imgURL": "food/cookie_sandwich.jpeg",
+			"dis": "6",
+			"meh": "5",
+			"yay": "12"
+		},
+		{ 
+
+			"id": "2",
+			"name": "curry",
+			"restaurant": "Thai Place",
+			"imgURL": "food/curry.jpg",
+			"dis": "2",
+			"meh": "8",
+			"yay": "12"
+		},
+		{ 
+
+			"id": "3",
+			"name": "steak",
+			"restaurant": "Donovan's",
+			"imgURL": "food/steak.jpg",
+			"dis": "6",
+			"meh": "5",
+			"yay": "12"
+		},
+		{ 
+
+			"id": "4",
+			"name": "ribs",
+			"restaurant": "Phil's BBQ",
+			"imgURL": "food/ribs.jpg", 
+			"dis": "6",
+			"meh": "5",
+			"yay": "12"
+		},
+		{ 
+
+			"id": "5",
+			"name": "pizza",
+			"restaurant": "Pizza Port",
+			"imgURL": "food/pizza.jpg",
+			"dis": "6",
+			"meh": "5",
+			"yay": "12"
+		}
+	]
+}

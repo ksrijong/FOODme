@@ -2,17 +2,19 @@
 
 $(document).ready(function() {
 
-    //get dishes json data 
+    //get dishes json data
     var dishes;
-    //for current dish 
+    //for current dish
     var curr;
     var i = 0; //tracker number
 
-    //get JSON data with first 
-         $.getJSON('explore.json', function(data) {
+    //get JSON data with first
+    console.log("BEFORE EXPLORE!");
+
+         $.getJSON('../json/explore.json', function(data) {
         dishes = data;
         console.log("getJSON activated!");
-        
+
         curr = data.dishes[i];
         console.log(curr);
         var name = curr.name;
@@ -24,24 +26,24 @@ $(document).ready(function() {
 });
 
          //move to next dish image
-        $('#next').click(function() { 
+        $('#next').click(function() {
             //change current dish number
                 i = i+1;
                 console.log(i);
                 curr = dishes.dishes[i];
-   
+
                     console.log(curr);
                     var im = curr.imgURL;
                     $('#dish_img').attr('src', im);
                 console.log(dishes.length);
-            
-        }); 
 
-        $('#prev').click(function() { 
+        });
+
+        $('#prev').click(function() {
              i = i-1;
             console.log(i);
             curr = dishes.dishes[i];
-   
+
             console.log(curr);
             var im = curr.imgURL;
             $('#dish_img').attr('src', im);
@@ -50,11 +52,11 @@ $(document).ready(function() {
 
 
         //push new dish into your  bookmarks
-        $('#book_button').click(function() { 
+        $('#book_button').click(function() {
 
-            var newBMK = { 
-                'name' : curr.name, 
-                'restaurant' : curr.restaurant, 
+            var newBMK = {
+                'name' : curr.name,
+                'restaurant' : curr.restaurant,
                 'imgURL' : curr.imgURL,
                 'address' : 'SD, CA'
             }
@@ -66,10 +68,3 @@ $(document).ready(function() {
         });
 
 })
- 
-
-
-
-
-
-    

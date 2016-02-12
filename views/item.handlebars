@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!--for three emojis in rating-->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+  <link type = "text/css" rel="stylesheet" href="css/style.css">
+  <link type = "text/css" rel="stylesheet" href="css/navbarstyle.css">
+  <link type = "text/css" rel="stylesheet" href="css/explore.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/dish.js"></script>
+
+  <title>FOODme</title>
+</head>
+
+  <body>
+
+    <!-- Menu Bar -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="nav pull-left"><span class="glyphicon glyphicon-chevron-left" onclick="goBack()"></span></a>
+            <script>
+              function goBack() {
+                window.history.back();
+              }
+            </script>
+          <a class="navbar-brand" href="index.html">FOODme</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-star"></span>&nbsp;About</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-globe"></span>&nbsp;Explore</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;My Profile<span class="caret"></span></a>
+              <ul class="dropdown-menu" style="">
+                <li><a href="bookmarks.handlebars" class="dropdown-item"><span class="glyphicon glyphicon-bookmark"></span>&nbsp;Bookmarks</a></li>
+                <li><a href="#" class="dropdown-item"><i class="fa fa-users"></i>&nbsp;Friends</a></li>
+                <li><a href="#" class="dropdown-item"><span class="glyphicon glyphicon-cog"></span>&nbsp; Settings</a></li>
+                <li><a href="login.html" class="dropdown-item"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+   <div id = "container">
+
+    <!--go back to explore food-->
+    <div>
+      <a href = "#bmk_confirm" id = "bmk" data-rel = "popup"><button>Bookmark</button></a>
+    </div>
+    <div id = "bmk_confirm" data-role="popup"> <p>Dish Bookmarked!</p></div>
+    <!--review page for specific dish after clicking on image-->
+    <div id = "dish_info">
+      <h3 id = "restaurant">RESTAURANT NAME</h3>
+      <img src = "/" id = 'dishIMG'/>
+      <h3 id = "dish_name">Yummy Dish</h3>
+
+      <div id = "faces">
+          <div><i class = "em em-disappointed" id = "ab"></i><p  id = "dis"></p></div>
+          <div><i class = "em em-confused" id = "ab"></i> <p  id = "meh"></p></div>
+          <div><i class = "em em-smiley" id = "ab"></i><p  id = "yay"></p></div>
+      </div>
+
+      <!--dislay good and bad hashtags-->
+      <div id = "hashtags">
+
+        <div class = "ups">
+          <div><i class = "em em-thumbsup" class = "thumbs"></i></div>
+          <div>Savory</div>
+          <div>Cheesy</div>
+          <div>Yummy</div>
+        </div>
+        <div class = "downs">
+          <div><i class = "em em-thumbsdown" class = "thumbs"></i></div>
+          <div>stinky</div>
+          <div>spicy</div>
+          <div>weird</div>
+        </div>
+      </div> <!--end of hashtag ratings-->
+    </div>
+    <div id = "rate_btn">
+        <button>RATE IT</button>
+    </div>
+
+  </div> <!--end of container-->
+
+  </body>
+</html>
