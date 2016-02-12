@@ -1,22 +1,22 @@
 {
 	"dishes": [
 
-		{ 
+		{
 			"id": "0",
 			"name": "burger",
 			"restaurant": "Burger Lounge",
-			"imgURL": "food/burger.jpg", 
+			"imgURL": "food/burger.jpg",
 			"dis": "6",
 			"meh": "5",
-			"yay": "12", 
-			"u1": "savory", 
-			"u2": "foodgasm", 
-			"u3": "pattyonfleek", 
-			"d1": "n", 
-			"d2": "o", 
-			"d3": "p"
+			"yay": "12",
+			"u1": "savory",
+			"u2": "foodgasm",
+			"u3": "pattyonfleek",
+			"d1": "nasty",
+			"d2": "old",
+			"d3": "dry"
 		},
-		{ 
+		{
 			"id": "1",
 			"name": "cookie_sandwich",
 			"restaurant": "Baked Bear",
@@ -24,14 +24,14 @@
 			"dis": "6",
 			"meh": "5",
 			"yay": "12",
-			"u1": "brainfreeze", 
-			"u2": "sweet", 
+			"u1": "brainfreeze",
+			"u2": "sweet",
 			"u3": "sugaroverload",
-			"d1": "n", 
-			"d2": "o", 
+			"d1": "n",
+			"d2": "o",
 			"d3": "p"
 		},
-		{ 
+		{
 
 			"id": "2",
 			"name": "curry",
@@ -39,15 +39,15 @@
 			"imgURL": "food/curry.jpg",
 			"dis": "2",
 			"meh": "8",
-			"yay": "12", 
-			"u1": "hot", 
-			"u2": "umami", 
+			"yay": "12",
+			"u1": "hot",
+			"u2": "umami",
 			"u3": "wonderful",
-			"d1": "n", 
-			"d2": "o", 
+			"d1": "n",
+			"d2": "o",
 			"d3": "p"
 		},
-		{ 
+		{
 
 			"id": "3",
 			"name": "steak",
@@ -55,32 +55,32 @@
 			"imgURL": "food/steak.jpg",
 			"dis": "6",
 			"meh": "5",
-			"yay": "12", 
-			"u1": "delicious", 
-			"u2": "savory", 
-			"u3": "OMFG", 
-			"d1": "n", 
-			"d2": "o", 
+			"yay": "12",
+			"u1": "delicious",
+			"u2": "savory",
+			"u3": "OMFG",
+			"d1": "n",
+			"d2": "o",
 			"d3": "p"
 		},
-		{ 
+		{
 
 			"id": "4",
 			"name": "ribs",
 			"restaurant": "Phil's BBQ",
-			"imgURL": "food/ribs.jpg", 
+			"imgURL": "food/ribs.jpg",
 			"dis": "6",
 			"meh": "5",
-			"yay": "12", 
-			"u1": "saucy", 
-			"u2": "best", 
-			"u3": "roast", 
-			"d1": "n", 
-			"d2": "o", 
-			"d3": "p" 
-			
+			"yay": "12",
+			"u1": "saucy",
+			"u2": "best",
+			"u3": "roast",
+			"d1": "n",
+			"d2": "o",
+			"d3": "p"
+
 		},
-		{ 
+		{
 
 			"id": "5",
 			"name": "pizza",
@@ -88,12 +88,12 @@
 			"imgURL": "food/pizza.jpg",
 			"dis": "6",
 			"meh": "5",
-			"yay": "12", 
-			"u1": "cheesy", 
-			"u2": "warm", 
-			"u3": "happy", 
-			"d1": "n", 
-			"d2": "o", 
+			"yay": "12",
+			"u1": "cheesy",
+			"u2": "warm",
+			"u3": "happy",
+			"d1": "n",
+			"d2": "o",
 			"d3": "p"
 		}
 	]
