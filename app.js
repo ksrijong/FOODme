@@ -50,6 +50,8 @@ app.get('/exp', exp.view)
 app.get('/item', item.view)
 app.get('/rate', rate.view)
 app.get('/profile', profile.view)
+
+app.get('/addBookmark', exp.addBkmk)
 // Example route
 // app.get('/users', user.list);
 

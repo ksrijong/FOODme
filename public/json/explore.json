@@ -3,8 +3,8 @@
 
 		{
 			"id": "0",
-			"name": "burger",
-			"restaurant": "Burger Lounge",
+			"dishName": "burger",
+			"restaurantName": "Burger Lounge",
 			"imgURL": "food/burger.jpg",
 			"dis": "6",
 			"meh": "5",
@@ -18,8 +18,8 @@
 		},
 		{
 			"id": "1",
-			"name": "cookie_sandwich",
-			"restaurant": "Baked Bear",
+			"dishName": "cookie_sandwich",
+			"restaurantName": "Baked Bear",
 			"imgURL": "food/cookie_sandwich.jpeg",
 			"dis": "6",
 			"meh": "5",
@@ -34,8 +34,8 @@
 		{
 
 			"id": "2",
-			"name": "curry",
-			"restaurant": "Thai Place",
+			"dishName": "curry",
+			"restaurantName": "Thai Place",
 			"imgURL": "food/curry.jpg",
 			"dis": "2",
 			"meh": "8",
@@ -50,8 +50,8 @@
 		{
 
 			"id": "3",
-			"name": "steak",
-			"restaurant": "Donovan's",
+			"dishName": "steak",
+			"restaurantName": "Donovan's",
 			"imgURL": "food/steak.jpg",
 			"dis": "6",
 			"meh": "5",
@@ -66,8 +66,8 @@
 		{
 
 			"id": "4",
-			"name": "ribs",
-			"restaurant": "Phil's BBQ",
+			"dishName": "ribs",
+			"restaurantName": "Phil's BBQ",
 			"imgURL": "food/ribs.jpg",
 			"dis": "6",
 			"meh": "5",
@@ -83,8 +83,8 @@
 		{
 
 			"id": "5",
-			"name": "pizza",
-			"restaurant": "Pizza Port",
+			"dishName": "pizza",
+			"restaurantName": "Pizza Port",
 			"imgURL": "food/pizza.jpg",
 			"dis": "6",
 			"meh": "5",

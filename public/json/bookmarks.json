@@ -17,12 +17,6 @@
 			"dishName": "World Famous Ribs",
       "address": "San Diego, CA",
 			"imageURL": "food/ribs.jpg"
-    },
-		{
-      "restaurantName": "Phil's BBQ NUMBER 2",
-			"dishName": "World Famous Ribs",
-      "address": "San Diego, CA",
-			"imageURL": "food/ribs.jpg"
     }
 	]
 }
