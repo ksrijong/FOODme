@@ -11,7 +11,7 @@ $(document).ready(function() {
 });
 
 function updateStatusCallback(){
-   alert('Status updated!!');
+   console.log('Status updated!!');
    // Your logic here
 }
 
@@ -48,8 +48,8 @@ function statusChangeCallback(response) {
 function checkLoginState() {
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
-    window.top.location = "/exp";
-    console.log("Redirect!");
+    /*window.top.location = "/exp";
+    console.log("Redirect!");*/
   });
 }
 
