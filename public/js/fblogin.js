@@ -27,8 +27,9 @@ function statusChangeCallback(response) {
     // Logged into your app and Facebook.
     testAPI();
     FB.Event.subscribe('auth.login', function(){
-    window.location = '/exp';
-});
+      window.location.href = '/exp';
+    });
+    console.log('Redirected?');
   } else if (response.status === 'not_authorized') {
     // The person is logged into Facebook, but not your app.
     document.getElementById('status').innerHTML = 'Please log ' +
@@ -47,6 +48,8 @@ function statusChangeCallback(response) {
 function checkLoginState() {
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
+    window.top.location = "http:/foodme-test.herokuapp.com/exp";
+    console.log("Redirect!");
   });
 }
 
