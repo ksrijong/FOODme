@@ -99,3 +99,9 @@ function testAPI() {
     alert('Thanks for logging in, ' + response.name + '!');
   });
 }
+
+function logOut() {
+  FB.logout(function(response) {
+    console.log("Logged out");
+  });
+}
