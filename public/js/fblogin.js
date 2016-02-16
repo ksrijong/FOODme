@@ -28,6 +28,7 @@ function statusChangeCallback(response) {
     testAPI();
     FB.Event.subscribe('auth.login', function(){
       window.location.href = '/exp';
+      console.log('Auth.login');
     });
     console.log('Redirected?');
   } else if (response.status === 'not_authorized') {
