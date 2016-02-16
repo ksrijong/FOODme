@@ -100,6 +100,7 @@ function testAPI() {
 
 function logOut() {
   FB.logout(function(response) {
+    window.location.href = '/';
     console.log("Logged out");
   });
 }
