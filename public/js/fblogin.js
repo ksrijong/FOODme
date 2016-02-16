@@ -48,7 +48,7 @@ function statusChangeCallback(response) {
 function checkLoginState() {
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
-    window.top.location = "http:/foodme-test.herokuapp.com/exp";
+    window.top.location = "/exp";
     console.log("Redirect!");
   });
 }
