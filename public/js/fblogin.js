@@ -26,6 +26,9 @@ function statusChangeCallback(response) {
   if (response.status === 'connected') {
     // Logged into your app and Facebook.
     testAPI();
+    FB.Event.subscribe('auth.login', function(){
+    window.location = '/exp';
+});
   } else if (response.status === 'not_authorized') {
     // The person is logged into Facebook, but not your app.
     document.getElementById('status').innerHTML = 'Please log ' +
@@ -86,9 +89,10 @@ window.fbAsyncInit = function() {
 // successful.  See statusChangeCallback() for when this call is made.
 function testAPI() {
   console.log('Welcome!  Fetching your information.... ');
-  FB.api('/exp', function(response) {
+  FB.api('/me', function(response) {
     console.log('Successful login for: ' + response.name);
-    document.getElementById('status').innerHTML =
-      'Thanks for logging in, ' + response.name + '!';
+    /*document.getElementById('status').innerHTML =
+      'Thanks for logging in, ' + response.name + '!';*/
+    alert('Thanks for logging in, ' + response.name + '!');
   });
 }
