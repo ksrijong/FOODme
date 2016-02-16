@@ -26,10 +26,7 @@ function statusChangeCallback(response) {
   if (response.status === 'connected') {
     // Logged into your app and Facebook.
     testAPI();
-    FB.Event.subscribe('auth.login', function(){
-      window.location.href = '/exp';
-      console.log('Auth.login');
-    });
+    window.location.href = '/exp';
     console.log('Redirected?');
   } else if (response.status === 'not_authorized') {
     // The person is logged into Facebook, but not your app.
