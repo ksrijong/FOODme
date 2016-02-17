@@ -111,12 +111,12 @@ function logOut() {
         console.log("Not logged in");
         window.location.replace();
       }
-    } catch (err) {
-      // any errors just logout
-      console.log("Err-forced logout");
-      window.location.replace("/");
-    }
+  } catch (err) {
+    // any errors just logout
+    console.log("Err-forced logout");
+    window.location.replace("/");
   }
+}
 /*
   if (!response.session) {
     window.location = "/";
@@ -126,8 +126,8 @@ function logOut() {
   FB.logout(function(response) {
     window.location.href = '/';
     console.log("Logged out");
-  });*/
-}
+  });
+}*/
 
 function getProfilePic() {
   FB.api(
