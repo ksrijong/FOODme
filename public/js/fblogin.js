@@ -104,3 +104,14 @@ function logOut() {
     console.log("Logged out");
   });
 }
+
+function getProfilePic() {
+  FB.api(
+    "/{user-id}/picture",
+    function (response) {
+      if (response && !response.error) {
+        /* handle the result */
+      }
+    }
+  );
+}
