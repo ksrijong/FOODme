@@ -99,6 +99,11 @@ function testAPI() {
 }
 
 function logOut() {
+  if (!response.session) {
+    window.location = "/";
+    return;
+  }
+  
   FB.logout(function(response) {
     window.location.href = '/';
     console.log("Logged out");
