@@ -99,15 +99,34 @@ function testAPI() {
 }
 
 function logOut() {
+  try {
+    if (FB.getAccessToken() != null) {
+      FB.logout(function(response) {
+        // user is now logged out from facebook do your post request or just redirect
+        console.log("No Err-Logout")
+        window.location.replace("/");
+        });
+      } else {
+        // user is not logged in with facebook, maybe with something else
+        console.log("Not logged in");
+        window.location.replace();
+      }
+    } catch (err) {
+      // any errors just logout
+      console.log("Err-forced logout");
+      window.location.replace("/");
+    }
+  }
+/*
   if (!response.session) {
     window.location = "/";
     return;
   }
-  
+
   FB.logout(function(response) {
     window.location.href = '/';
     console.log("Logged out");
-  });
+  });*/
 }
 
 function getProfilePic() {
