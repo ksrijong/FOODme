@@ -28,6 +28,8 @@
           xfbml      : true,
           version    : 'v2.5'
         });
+
+        getProfilePic();
       };
 
       (function(d, s, id){
@@ -70,6 +72,8 @@
       </div>
     </nav>
 
+    <br><br>
+
     <h2>My Profile</h2>
 
     <div id="ProfilePage">
@@ -78,7 +82,7 @@
         alt="User Name" class="avatar" width="200" height="200">
         <!--<script> getProfilePic(); </script>-->
 
-        <h1 class="name">User Name</h1>
+        <h1 class="name" id="userName">User Name</h1>
         <a class="editProfile" href="#">Edit Profile</a>
         <h3 class="level">Master Foodie
           <img src="https://cdn2.iconfinder.com/data/icons/bitsies/128/Crown-128.png"
