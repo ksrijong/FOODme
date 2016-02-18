@@ -130,12 +130,8 @@ function logOut() {
 }*/
 
 function getProfilePic() {
-  FB.api(
-    "/{user-id}/picture",
-    function (response) {
-      if (response && !response.error) {
-        /* handle the result */
-      }
-    }
-  );
+  FB.api('/me', function(response) {
+    console.log("Changing profile pic");
+    document.getElementById('userName').innerHTML = response.name;
+  });
 }
