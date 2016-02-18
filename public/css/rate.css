@@ -1,21 +1,29 @@
-#ab { 
+#ab {
 	width: 40px;
 	height: 40px;
 	opacity: 0.5;
 }
 
-.emoji { 
+.emoji {
 	display: inline-block;
 }
 
-#ab:hover { 
+#ab:hover {
 	opacity: 1;
 }
 
-#submit { 
+#submit {
 	margin-top: 10px;
 }
 
-form { 
+form {
 	text-align: center;
+}
+
+#ui{
+	border-radius: 3px;
+}
+
+#di{
+	border-radius: 3px;
 }

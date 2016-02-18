@@ -54,32 +54,32 @@
       </div>
     </nav>
 
-		<form>
+		<form action="/rate" method="post">
 			<h4>Dish Rating</h4>
 				<h5 id = "dname"></h5>
 				<h5 id = 'drest'></h5>
 				<p>This dish made me feel...</p>
 			<!--reaction to dishes-->
 			<div class = "emoji">
-				<i class = "em em-disappointed" id = "ab"></i>
+				<i class = "em em-disappointed" id = "ab" name="sad"></i>
 				Disappointed
 			</div>
 			<div class = 'emoji'>
-				<i class = "em em-confused" id = "ab"></i>
+				<i class = "em em-confused" id = "ab" name="eh"></i>
 				Meh
 			</div>
 			<div class = 'emoji'>
-				<i class = "em em-smiley" id = "ab"></i>
+				<i class = "em em-smiley" id = "ab" name="happy"></i>
 				Happy
 			</div>
 			<!--hashtag ratings-->
 			<div id = "up_tags">
 				<p>UPS: list three good things about this dish, separate each using a comma</p> <i>example: #awesome, #yummy</i>
-				<input type = "text" id = "ui"></input>
+				<input type = "text" id = "ui" name="ups"></input>
 			</div>
 			<div id = "down_tags">
 				<p>DOWNS: list three bad things about this dish, separate each using a comma</p> <i>example: #disgusting, #spicy</i>
-				<input type = "text" id = "di"></input>
+				<input type = "text" id = "di" name="downs"></input>
 			</div>
 
 			<div id = "submit">

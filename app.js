@@ -15,6 +15,7 @@ var bookmarks = require('./routes/bookmarks');
 var exp = require('./routes/exp');
 var item = require('./routes/item');
 var rate = require('./routes/rating');
+var postRating = require('./routes/postRating');
 var profile = require('./routes/profile');
 // Example route
 // var user = require('./routes/user');
@@ -49,6 +50,7 @@ app.get('/bookmarks', bookmarks.view)
 app.get('/exp', exp.view)
 app.get('/item', item.view)
 app.get('/rate', rate.view)
+app.post('/rate', postRating.view);
 app.get('/profile', profile.view)
 
 app.get('/addBookmark', exp.addBkmk)
