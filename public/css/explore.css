@@ -1,17 +1,17 @@
 /*left and right buttons */
-#swipe { 
+#swipe {
 	display: inline-block;
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
 
-#bmk_confirm { 
+#bmk_confirm {
 	visibility: hidden;
 	background-color: red;
 	color: white;
 }
 
-.move { 
+.move {
 	height: 50px;
 	width: 50px;
 	background-color: tomato;
@@ -20,7 +20,7 @@
 	font-style: bold;
 }
 
-#book_button { 
+#book_button {
 	height: 75px;
 	width: 100px;
 	background-color: white;
@@ -30,50 +30,58 @@
 	border: 1px solid tomato;
 }
 
-#end { 
+#bmkIcon {
+	height: 80px;
+	width: 80px;
+}
+#ab {
+	height: 50px;
+	width: 50px;
+	margin-right: 10px;
+}
+
+#end {
 	visibility: hidden;
 	margin: 10px;
 }
 
-#faces div { 
+#faces div {
 	display: inline-block;
 	margin-right: 10px;
 }
 
-#ht_type div { 
+#ht_type div {
 	display: inline-block;
 	margin-bottom: 10px;
 }
 
-#hashtags div { 
+#hashtags div {
 	margin-right: 1px;
 }
 
-.ups div { 
+.ups div {
 	display: inline-block;
 	color: black;
 
 }
 
-
-
-#dish_img { 
+#dish_img {
 	height: 200px;
 	width: 200px;
 	margin-top: 10px;
 }
 
-.downs div { 
+.downs div {
 	display: inline-block;
 	color: black;
 
 }
 
-#dishIMG { 
+#dishIMG {
 	height: 250px;
 	width: 250px;
 }
 
-.thumbs { 
+.thumbs {
 	width: 20px;
 }
