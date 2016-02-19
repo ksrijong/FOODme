@@ -17,7 +17,7 @@ $(document).ready(function() {
     console.log("BEFORE EXPLORE!");
 
     // OLD STUFF START
-    
+
     $.getJSON('../json/explore.json', function(data) {
       dishes = data;
       console.log("getJSON activated!");
