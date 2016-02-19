@@ -8,14 +8,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <link type = "text/css" rel="stylesheet" href="css/style.css">
-  <link type = "text/css" rel="stylesheet" href="css/profile.css">
   <link type = "text/css" rel="stylesheet" href="css/navbarstyle.css">
-
+  <link type = "text/css" rel="stylesheet" href="css/friends.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="http://connect.facebook.net/en_US/all.js"></script>
-  <script type="text/javascript" src="../js/fblogin.js"></script>
+  <script type="text/javascript" src="js/friends.js"></script>
+
 
   <title>FOODme</title>
 </head>
@@ -29,8 +28,6 @@
           xfbml      : true,
           version    : 'v2.5'
         });
-
-        getProfileInfo();
       };
 
       (function(d, s, id){
@@ -42,7 +39,20 @@
        }(document, 'script', 'facebook-jssdk'));
     </script>
 
-    <!-- Menu Bar -->
+    <!--
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a href="/exp"><span class="glyphicon glyphicon-globe"></span>&nbsp;<p>Explore</p></a></li>
+          <li><a href="/profile" class="dropdown-item"><span class="glyphicon glyphicon-user"></span>&nbsp;<p>My Info</p></a></li>
+          <li><a href="/bookmarks" class="dropdown-item"><span class="glyphicon glyphicon-bookmark"></span>&nbsp;<p>Bookmarks</p></a></li>
+          <li><a href="#" class="dropdown-item"><i class="fa fa-users"></i>&nbsp;<p>Friends</p></a></li>
+          <li><a href="#" class="dropdown-item"><span class="glyphicon glyphicon-cog"></span>&nbsp;<p>Settings</p></a></li>
+        </ul>
+      </div>
+    </nav>
+  -->
+
     <div id="footer">
       <div class="col-xs-12 navbar-inverse navbar-fixed-bottom">
         <div class="row" id="bottomNav">
@@ -53,7 +63,6 @@
         </div>
       </div>
     </div>
-
 
     <!-- Menu Bar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -67,39 +76,40 @@
             </script>
           <a class="navbar-brand" href="/exp">FOODme</a>
 
+          <!--<a href="/" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-log-out"></span><p>Logout</p></a>-->
           <a onClick="logOut();" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-log-out"></span><p>Logout</p></a>
           <a href="/upload" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-edit"></span><p>Review</p></a>
         </div>
       </div>
     </nav>
 
-    <br><br>
+   <div id = "container">
 
-    <h2>My Profile</h2>
+        <h1>FRIENDS</h1>
 
-    <div id="ProfilePage">
-      <div id="userInfo">
-        <div id="profPic"><!--<img src="http://www.allegraabbotsford.com/wp-content/uploads/2015/06/generic-profile.png"
-        alt="User Name" class="avatar" width="200" height="200">--></div>
-        <!--<img src="http://graph.facebook.com/1220743087940047/picture" id="profPic" />-->
+        <div id = "chart" class = "table">
+          <h3>Friends</h3>
+          {{#each friends}}
+            <div class ="friend" id="{{name}}">
+              <p class = "rank">{{rank}}</p>
+              <img src="../{{img}}"/>
+              <p class = "name">{{name}}</p>
+            </div>
+          {{/each}}
+        </div> <!--end of chart div-->
 
-        <h1 class="name" id="userName"></h1>
-        <a class="editProfile" href="#">Edit Profile</a>
-        <h3 class="level">Master Foodie
-          <img src="https://cdn2.iconfinder.com/data/icons/bitsies/128/Crown-128.png"
-          width="20" height="20">
-        </h3>
+        <div id = "cityTop" class = "table">
+          <h3>Top Foodies in SD</h3>
+          {{#each friends}}
+            <div class ="friend" id="{{name}}">
+              <p class = "rank">{{rank}}</p>
+              <img src="../{{img}}"/>
+              <p class = "name">{{name}}</p>
+            </div>
+          {{/each}}
+        </div> <!--end of chart div-->
 
-        <div class="data">
-          <div class="numbers">
-            <strong>3</strong>&nbsp;Reviews &nbsp;
-            <strong>25</strong>&nbsp;&nbsp;Bookmarks
-          </div>
-        </div>
-        <br>
-        <a class="userLocation"> San Diego, California</a>
-      </div>
-    </div>
+	</div> <!--end of container-->
 
   </body>
 </html>

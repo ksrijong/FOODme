@@ -6,41 +6,20 @@
 
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
   <link type = "text/css" rel="stylesheet" href="css/style.css">
-  <link type = "text/css" rel="stylesheet" href="css/profile.css">
   <link type = "text/css" rel="stylesheet" href="css/navbarstyle.css">
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="http://connect.facebook.net/en_US/all.js"></script>
-  <script type="text/javascript" src="../js/fblogin.js"></script>
+  <script type="text/javascript" src="js/upload.js"></script>
 
   <title>FOODme</title>
 </head>
 
   <body>
-
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '1589516044683643',
-          xfbml      : true,
-          version    : 'v2.5'
-        });
-
-        getProfileInfo();
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "https://connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
 
     <!-- Menu Bar -->
     <div id="footer">
@@ -54,7 +33,6 @@
       </div>
     </div>
 
-
     <!-- Menu Bar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -67,39 +45,29 @@
             </script>
           <a class="navbar-brand" href="/exp">FOODme</a>
 
+          <!--<a href="/" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-log-out"></span><p>Logout</p></a>-->
           <a onClick="logOut();" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-log-out"></span><p>Logout</p></a>
           <a href="/upload" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-edit"></span><p>Review</p></a>
         </div>
       </div>
     </nav>
 
-    <br><br>
+   <div id = "container">
+    <form action="/exp">
+      <h2>Upload Dish</h2>
+          <input type="text" name="dish" placeholder="Dish Name" id = "name">
+          <input type="text" name="restaurant" placeholder="Restaurant" id = "restaurant">
+          <input type="text" name="location" placeholder= "Address" id = "address">
+          <input type="text" name="hashtags" placeholder= "Hashtags" id = "tags">
+      <!--taking picture-->
+      <h4>Picture</h4>
+          <input type="file" id = "{{imgURL}}"accept="image/*" capture id>
+          <button id = "upBtn">SUBMIT</button>
+        </form>
 
-    <h2>My Profile</h2>
 
-    <div id="ProfilePage">
-      <div id="userInfo">
-        <div id="profPic"><!--<img src="http://www.allegraabbotsford.com/wp-content/uploads/2015/06/generic-profile.png"
-        alt="User Name" class="avatar" width="200" height="200">--></div>
-        <!--<img src="http://graph.facebook.com/1220743087940047/picture" id="profPic" />-->
 
-        <h1 class="name" id="userName"></h1>
-        <a class="editProfile" href="#">Edit Profile</a>
-        <h3 class="level">Master Foodie
-          <img src="https://cdn2.iconfinder.com/data/icons/bitsies/128/Crown-128.png"
-          width="20" height="20">
-        </h3>
-
-        <div class="data">
-          <div class="numbers">
-            <strong>3</strong>&nbsp;Reviews &nbsp;
-            <strong>25</strong>&nbsp;&nbsp;Bookmarks
-          </div>
-        </div>
-        <br>
-        <a class="userLocation"> San Diego, California</a>
-      </div>
-    </div>
+	</div> <!--end of container-->
 
   </body>
 </html>
