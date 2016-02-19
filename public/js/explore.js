@@ -14,7 +14,7 @@
 $(document).ready(function() {
 
     //get JSON data with first
-    console.log("BEFORE EXPLORE!");    
+    console.log("BEFORE EXPLORE!");
 
     //get json array data
     $.get('/addExplore', function(data) {
@@ -73,10 +73,7 @@ $(document).ready(function() {
         'address' : 'SD, CA'
       }
       console.log("BMK push testing...")
-      console.log(newBMK);
-
-      bookmarks.bookmarks.push(newBMK);
-      console.log(bookmarks);
+      console.log(newBMK);      
 
       $.get(
         "/addBookmark",
