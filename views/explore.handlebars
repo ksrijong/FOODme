@@ -58,7 +58,7 @@
         <div class="row" id="bottomNav">
           <div class="col-xs-3 text-center"><a href="/exp"><i class="glyphicon glyphicon-globe"></i><br><p>Explore</p></a></div>
           <div class="col-xs-3 text-center"><a href="/bookmarks"><i class="glyphicon glyphicon-bookmark"></i><br><p>Bookmarks</p></a></div>
-          <div class="col-xs-3 text-center"><a href="/friends"><i class="fa fa-users"></i><br><p>Friends</p></a></div>
+          <div class="col-xs-3 text-center"><a href="#"><i class="fa fa-users"></i><br><p>Friends</p></a></div>
           <div class="col-xs-3 text-center"><a href="/profile"><i class="glyphicon glyphicon-user"></i><br><p>Profile</p></a></div>
         </div>
       </div>
@@ -68,19 +68,16 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <!--
           <a class="nav pull-left"><span class="glyphicon glyphicon-chevron-left" onclick="goBack()"></span></a>
             <script>
               function goBack() {
                 window.history.back();
               }
             </script>
-          -->
           <a class="navbar-brand" href="/exp">FOODme</a>
 
           <!--<a href="/" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-log-out"></span><p>Logout</p></a>-->
-          <!--<a onClick="logOut();" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-log-out"></span><p>Logout</p></a>-->
-          <a href="/upload" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-edit"></span><p>Review</p></a>
+          <a href="/" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-edit"></span><p>Review</p></a>
         </div>
       </div>
     </nav>
@@ -94,10 +91,6 @@
 			<button id = "spin">Explore the Crave</button>-->
       <div id = "container">
 
-      <form action="/search.html" class="search-wrapper cf">
-        <input type="text" placeholder="Search for food here..." required="">
-        <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
-      </form>
       <div class = "item">
         <a href="/item"><img src = '/item' id = "dish_img"/></a>
         <p id = "dish_id">Click the dish for more info</p>
@@ -105,7 +98,7 @@
 
       <div id = "swipe">
         <button class = "move" id = "prev"> << </button>
-        <a href = "#bmk_confirm" id = "bmk" data-rel = "popup"><button id = "book_button"><i class="glyphicon glyphicon-bookmark"></i><p></button></a>
+        <a href = "#bmk_confirm" id = "bmk" data-rel = "popup"><button id = "book_button"><i class="glyphicon glyphicon-bookmark"></i><p>Bookmark</button></a>
         <button class = "move" id = "next"> >> </button>
       </div>
 

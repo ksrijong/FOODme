@@ -1,3 +1,7 @@
+body{
+	margin-top: 120px;
+}
+
 /*left and right buttons */
 #swipe {
 	display: inline-block;
@@ -30,6 +34,8 @@
 	border: 1px solid tomato;
 }
 
+<<<<<<< HEAD
+=======
 #bmkIcon {
 	height: 80px;
 	width: 80px;
@@ -40,6 +46,7 @@
 	margin-right: 10px;
 }
 
+>>>>>>> 79929e28c9f4ac2c6a5bd30b91391fd018df565c
 #end {
 	visibility: hidden;
 	margin: 10px;
@@ -66,8 +73,8 @@
 }
 
 #dish_img {
-	height: 200px;
-	width: 200px;
+	height: 180px;
+	width: 180px;
 	margin-top: 10px;
 }
 
@@ -77,10 +84,6 @@
 
 }
 
-#dishIMG {
-	height: 250px;
-	width: 250px;
-}
 
 .thumbs {
 	width: 20px;
