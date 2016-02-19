@@ -1,12 +1,12 @@
 var curr;
-var id = 0; 
-var dishes; 
-var face = ""; 
+var id = 0;
+var dishes;
+var face = "";
 var ups = false;
 var downs = false;
 var complete = false;
 
-$(document).ready(function() { 
+$(document).ready(function() {
 
     console.log("rate.js connected!");
     var r = localStorage.getItem('rate');
@@ -25,14 +25,15 @@ $(document).ready(function() {
         var im = "../" + curr.imgURL;
         console.log("Image is..." + im);
         $('#dish_img').attr('src', im);
-        console.log(dishes.dishes.length); 
+        console.log(dishes.dishes.length);
         loadDishReview();
     });
 
 
     //in rating form, the following are choices for facial expressions
-    $('.em-disappointed').click(function() { 
+    $('.em-disappointed').click(function() {
         console.log('disappointed clicked!');
+        $("#sad-emoji-radio").prop("checked", true);
         $('.em-disappointed').css('opacity', 1);
         $('.em-confused').css('opacity', 0.5);
         $('.em-smiley').css('opacity', 0.5);
@@ -41,7 +42,7 @@ $(document).ready(function() {
     });
 
 
-    $('.em-confused').click(function() { 
+    $('.em-confused').click(function() {
         console.log('meh clicked!');
         $('.em-disappointed').css('opacity', 0.5);
         $('.em-confused').css('opacity', 1);
@@ -51,7 +52,7 @@ $(document).ready(function() {
 
     });
 
-    $('.em-smiley').click(function() { 
+    $('.em-smiley').click(function() {
         console.log('yay clicked!');
         $('.em-disappointed').css('opacity', 0.5);
         $('.em-confused').css('opacity', 0.5);
@@ -60,29 +61,29 @@ $(document).ready(function() {
 
     })
 
-    $('#rateBtn').click(function() { 
+    $('#rateBtn').click(function() {
         console.log("rate id success!");
     });
 
-    $("#submitBtn").click(function() { 
+    $("#submitBtn").click(function() {
         checkCompletion();
-        if (complete == true) { 
+        if (complete == true) {
             alert("Your rating was submited!");
             window.location.href = "/exp";
             return false;
 
         }
-        else { 
+        else {
             missing();
             return false;
         }
     })
-    
+
 }) //end of document ready
 
-function loadDishReview()  { 
+function loadDishReview()  {
     //set image
-    var img = "../" + curr.imgURL; 
+    var img = "../" + curr.imgURL;
     console.log(img);
     $('#dishIMG').attr('src', img);
     $('#dis').text(curr.dis);
@@ -101,59 +102,59 @@ function loadDishReview()  {
 
 
 //taking to rateForm
-function rateForm() { 
+function rateForm() {
     alert("Taking you to rate form!");
 }
 
-function checkInput() { 
-    if ($('#ui').val() != '') { 
-        ups = true; 
+function checkInput() {
+    if ($('#ui').val() != '') {
+        ups = true;
         console.log(ups);
     };
-    if ($('#di').val() != '') { 
-        downs = true; 
+    if ($('#di').val() != '') {
+        downs = true;
         console.log(downs);
     };
 }
 
 function checkCompletion() {
-    
+
     checkInput();
-    if (face != "" && ups != false && downs != false) { 
+    if (face != "" && ups != false && downs != false) {
         complete = true;
         changeData();
     };
 }
 
-function missing() { 
+function missing() {
     var missing = '';
-    if (face == false) { 
+    if (face == false) {
         missing = missing + " Faces ";
     }
 
-    if (ups == false) { 
+    if (ups == false) {
         missing = missing + " Ups ";
     }
-    if (downs == false) { 
+    if (downs == false) {
         missing = missing + " Downs ";
     }
     alert("You are missing the following: " + missing);
     return false;
 }
 
-function changeData() { 
+function changeData() {
 
-    if (face == 'dis') { 
+    if (face == 'dis') {
         console.log(curr.dis);
         curr.dis++;
         console.log(curr.dis);
     }
-    else if (face == 'meh') { 
+    else if (face == 'meh') {
         console.log(curr.meh);
         curr.meh++;
         console.log(curr.meh);
     }
-    else if (face == 'yay') { 
+    else if (face == 'yay') {
         console.log(curr.yay);
         curr.yay++;
         console.log(curr.yay);

@@ -60,24 +60,27 @@
 				<p>This dish made me feel...</p>
 			<!--reaction to dishes-->
 			<div class = "emoji">
-				<input type="radio" value = "em em-disappointed"  name="sad"></i>
+				<input type="radio" value="disappointed" name="reaction" class="emoji-radio" id="sad-emoji-radio">
+				<label for="sad-emoji-radio"><i class = "em em-disappointed" id = "ab"></i></label>
 				Disappointed
 			</div>
 			<div class = 'emoji'>
-				<i class = "em em-confused" id = "ab" name="eh"></i>
+				<input type="radio" value="meh" name="reaction" class="emoji-radio" id="confused-emoji-radio">
+				<label for="confused-emoji-radio"><i class = "em em-confused" id = "ab"></i></label>
 				Meh
 			</div>
 			<div class = 'emoji'>
-				<i class = "em em-smiley" id = "ab" name="happy"></i>
+				<input type="radio" value="happy" name="reaction" class="emoji-radio" id="happy-emoji-radio">
+				<label for="happy-emoji-radio"><i class = "em em-smiley" id = "ab" name="happy"></i></label>
 				Happy
 			</div>
 			<!--hashtag ratings-->
 			<div id = "up_tags">
-				<p>UPS: list three good things about this dish, separate each using a comma</p> <i>example: #awesome, #yummy</i>
+				<p>UPS: list three good things about this dish, separate each using a space</p> <i>example: awesome yummy flavorful</i>
 				<input type = "text" id = "ui" name="ups"></input>
 			</div>
 			<div id = "down_tags">
-				<p>DOWNS: list three bad things about this dish, separate each using a comma</p> <i>example: #disgusting, #spicy</i>
+				<p>DOWNS: list three bad things about this dish, separate each using a space</p> <i>example: disgusting spicy toosalty</i>
 				<input type = "text" id = "di" name="downs"></input>
 			</div>
 
