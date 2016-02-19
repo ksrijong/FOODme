@@ -9,8 +9,8 @@ exports.view = function(req, res) { 
   var unhappy = req.body.unhappy;
 
   // Modify item using data from form
-  data.dishes[0].u3 = ups;
-  data.dishes[0].d3 = downs;
+  data.dishes[0].u4 = ups;
+  data.dishes[0].d4 = downs;
   data.dishes[0].dis = unhappy;
   data.dishes[0].meh = eh;
   data.dishes[0].yay = happy;
