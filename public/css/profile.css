@@ -136,3 +136,9 @@ input {
 .glyphicon.glyphicon-chevron-left:hover {
     color: #5e5e5e;
 }
+
+.logout {
+	color: #000;
+	text-align: center;
+	margin: auto;
+}
