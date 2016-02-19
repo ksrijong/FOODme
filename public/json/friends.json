@@ -1,0 +1,35 @@
+{
+	"friends": [
+
+		{
+			"name": "Rachel Green", 
+			"city": "San Diego, CA", 
+			"img": "friends/rachelgreen.jpg",
+			"title": "Master Foodie", 
+			"rank": "1"
+		}, 
+
+		{
+			"name": "Ross Geller", 
+			"city": "San Diego, CA", 
+			"img": "friends/ross.jpg",
+			"title": "Master Foodie", 
+			"rank": "2"
+		},
+		{
+			"name": "Phoebe Buffay", 
+			"city": "San Diego, CA", 
+			"img": "friends/phoebe.jpg",
+			"title": "Foodie Trainee", 
+			"rank": "3"
+		},
+		{
+			"name": "Joey Tribbiani", 
+			"city": "San Diego, CA", 
+			"img": "friends/joey.jpg",
+			"title": "Foodie Trainee", 
+			"rank": "4"
+		}
+
+	]
+}

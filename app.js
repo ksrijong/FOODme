@@ -17,6 +17,9 @@ var item = require('./routes/item');
 var rate = require('./routes/rating');
 var postRating = require('./routes/postRating');
 var profile = require('./routes/profile');
+var register = require('./routes/register');
+var upload = require('./routes/up');
+var friends = require('./routes/friends');
 // Example route
 // var user = require('./routes/user');
 
@@ -52,8 +55,12 @@ app.get('/item', item.view)
 app.get('/rate', rate.view)
 app.post('/rate', postRating.view);
 app.get('/profile', profile.view)
-
 app.get('/addBookmark', exp.addBkmk)
+app.get('/register', register.view)
+app.get('/friends', friends.view)
+app.get('/upload', upload.view)
+app.post('/addExplore', upload.addExplore)
+app.get('/addExplore', upload.getExplore)
 // Example route
 // app.get('/users', user.list);
 

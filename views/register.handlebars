@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+
+  <link type = "text/css" rel="stylesheet" href="css/style.css">
+  <link type = "text/css" rel="stylesheet" href="css/navbarstyle.css">
+  <link type = "text/css" rel="stylesheet" href="css/login.css"></script>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+  <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/reg.js"></script>
+
+  <title>FOODme</title>
+
+</head>
+
+<body>
+
+  <!-- For Facebook Login -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '1589516044683643',
+        xfbml      : true,
+        version    : 'v2.5'
+      });
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/exp">FOODme</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-star"></span>&nbsp;About</a></li>
+          <li><a href="/exp"><span class="glyphicon glyphicon-globe"></span>&nbsp;Explore</a></li>
+          <li><a href="/exp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="/exp"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="login-card">
+      <h1>FOODme</h1><br>
+      <form id = "regform">
+        <input type="text" name="name" placeholder="Name" id = "name">
+        <input type="text" name="user" placeholder="Email" id = "email">
+        <input type="password" name="pass" placeholder="Password" id = "pass1">
+        <input type="password" name="pass" placeholder="Confirm Password" id = "pass2">
+        <div id = "submit">SUBMIT</div>
+
+      </form> <!--end of registration form-->
+
+    </div>
+  </div>
+
+</body>
+</html>

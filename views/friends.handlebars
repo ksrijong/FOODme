@@ -9,12 +9,12 @@
 
   <link type = "text/css" rel="stylesheet" href="css/style.css">
   <link type = "text/css" rel="stylesheet" href="css/navbarstyle.css">
-  <link type = "text/css" rel="stylesheet" href="css/explore.css">
+  <link type = "text/css" rel="stylesheet" href="css/friends.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="../js/explore.js"></script>
-  <script type="text/javascript" src="../js/fblogin.js"></script>
+  <script type="text/javascript" src="js/friends.js"></script>
+
 
   <title>FOODme</title>
 </head>
@@ -68,18 +68,15 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <!--
           <a class="nav pull-left"><span class="glyphicon glyphicon-chevron-left" onclick="goBack()"></span></a>
             <script>
               function goBack() {
                 window.history.back();
               }
             </script>
-          -->
           <a class="navbar-brand" href="/exp">FOODme</a>
 
           <!--<a href="/" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-log-out"></span><p>Logout</p></a>-->
-          <!--<a onClick="logOut();" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-log-out"></span><p>Logout</p></a>-->
           <a href="/upload" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-edit"></span><p>Review</p></a>
         </div>
       </div>
@@ -87,23 +84,29 @@
 
    <div id = "container">
 
-		<div id = "finder">
-			<!--<form>
-				<input type = "search" value = "Search"/>
-			</form>
-			<button id = "spin">Explore the Crave</button>-->
-      <div id = "container">
-        
-      <div class = "item">
-        <a href="/item"><img src = '/item' id = "dish_img"/></a>
-        <p id = "dish_id">Click the dish for more info</p>
-      </div>
+        <h1>FRIENDS</h1>
 
-      <div id = "swipe">
-        <button class = "move" id = "prev"> << </button>
-        <a href = "#bmk_confirm" id = "bmk" data-rel = "popup"><button id = "book_button"><i class="glyphicon glyphicon-bookmark"></i><p></button></a>
-        <button class = "move" id = "next"> >> </button>
-      </div>
+        <div id = "chart" class = "table">
+          <h3>Friends</h3>
+          {{#each friends}}
+            <div class ="friend" id="{{name}}">
+              <p class = "rank">{{rank}}</p>
+              <img src="../{{img}}"/>
+              <p class = "name">{{name}}</p>
+            </div>
+          {{/each}}
+        </div> <!--end of chart div-->
+
+        <div id = "cityTop" class = "table">
+          <h3>Top Foodies in SD</h3>
+          {{#each friends}}
+            <div class ="friend" id="{{name}}">
+              <p class = "rank">{{rank}}</p>
+              <img src="../{{img}}"/>
+              <p class = "name">{{name}}</p>
+            </div>
+          {{/each}}
+        </div> <!--end of chart div-->
 
 	</div> <!--end of container-->
 

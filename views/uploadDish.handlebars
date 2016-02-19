@@ -4,25 +4,22 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel='stylesheet' href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
   <link type = "text/css" rel="stylesheet" href="css/style.css">
   <link type = "text/css" rel="stylesheet" href="css/navbarstyle.css">
-  <link type = "text/css" rel="stylesheet" href="css/explore.css">
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="function.js"></script>
+  <script type="text/javascript" src="js/upload.js"></script>
 
   <title>FOODme</title>
 </head>
 
   <body>
-
-    <div id="background">
-      <img src="https://static.pexels.com/photos/6740/food-sugar-lighting-milk.jpg" class="stretch" alt=""/>
-    </div>
 
     <!-- Menu Bar -->
     <div id="footer">
@@ -54,34 +51,19 @@
       </div>
     </nav>
 
-  <div id = "container">
-    <br></br>
-    <h2>Welcome to FoodMe!</h2>
-    <div id= "homeText">
-      Search for a specific item
-    </div>
-
-    <div id = "finder">
-      <form action="/search.html" class="search-wrapper cf">
-        <input type="text" placeholder="Search for food here..." required="">
-        <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
-      </form>
-    </div> <!--end of finder-->
-  </div> <!--end of container-->
-
    <div id = "container">
-     <div id= "homeText">
-       Or explore a bit...
-     </div>
+    <form action="/exp">
+      <h2>Upload Dish</h2>
+          <input type="text" name="dish" placeholder="Dish Name" id = "name">
+          <input type="text" name="restaurant" placeholder="Restaurant" id = "restaurant">
+          <input type="text" name="location" placeholder= "Address" id = "address">
+          <input type="text" name="hashtags" placeholder= "Hashtags" id = "tags">
+      <!--taking picture-->
+      <h4>Picture</h4>
+          <input type="file" id = "{{imgURL}}"accept="image/*" capture id>
+          <button id = "upBtn">SUBMIT</button>
+        </form>
 
-		<div id = "finder">
-
-      <a href="/exp"><button id="spin" class="explore-button">Explore the Crave</button></a>
-      <div id = "location">
-        <p id = "loc">San Diego, CA</p>
-        <a id = "change_loc">change location?</a>
-      </div>
-		</div> <!--end of finder-->
 
 
 	</div> <!--end of container-->

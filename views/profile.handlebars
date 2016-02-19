@@ -14,6 +14,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="http://connect.facebook.net/en_US/all.js"></script>
   <script type="text/javascript" src="../js/fblogin.js"></script>
 
   <title>FOODme</title>
@@ -29,7 +30,7 @@
           version    : 'v2.5'
         });
 
-        getProfilePic();
+        getProfileInfo();
       };
 
       (function(d, s, id){
@@ -47,7 +48,7 @@
         <div class="row" id="bottomNav">
           <div class="col-xs-3 text-center"><a href="/exp"><i class="glyphicon glyphicon-globe"></i><br><p>Explore</p></a></div>
           <div class="col-xs-3 text-center"><a href="/bookmarks"><i class="glyphicon glyphicon-bookmark"></i><br><p>Bookmarks</p></a></div>
-          <div class="col-xs-3 text-center"><a href="#"><i class="fa fa-users"></i><br><p>Friends</p></a></div>
+          <div class="col-xs-3 text-center"><a href="/friends"><i class="fa fa-users"></i><br><p>Friends</p></a></div>
           <div class="col-xs-3 text-center"><a href="/profile"><i class="glyphicon glyphicon-user"></i><br><p>Profile</p></a></div>
         </div>
       </div>
@@ -66,24 +67,28 @@
             </script>
           <a class="navbar-brand" href="/exp">FOODme</a>
 
-          <a href="/" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-log-out"></span><p>Logout</p></a>
-          <a href="/" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-edit"></span><p>Review</p></a>
+          <a href="/upload" class="dropdown-item nav pull-right"><span class="glyphicon glyphicon-edit"></span><p>Review</p></a>
         </div>
       </div>
     </nav>
 
-    <br><br>
+    <br>
 
     <h2>My Profile</h2>
 
     <div id="ProfilePage">
       <div id="userInfo">
-        <img src="http://www.allegraabbotsford.com/wp-content/uploads/2015/06/generic-profile.png"
-        alt="User Name" class="avatar" width="200" height="200">
-        <!--<script> getProfilePic(); </script>-->
+        <div id="profPic"><!--<img src="http://www.allegraabbotsford.com/wp-content/uploads/2015/06/generic-profile.png"
+        alt="User Name" class="avatar" width="200" height="200">--></div>
+        <!--<img src="http://graph.facebook.com/1220743087940047/picture" id="profPic" />-->
 
+<<<<<<< HEAD
         <h1 class="name" id="userName">User Name</h1>
         
+=======
+        <h1 class="name" id="userName"></h1>
+        <a class="editProfile" href="#">Edit Profile</a>
+>>>>>>> 79929e28c9f4ac2c6a5bd30b91391fd018df565c
         <h3 class="level">Master Foodie
           <img src="https://cdn2.iconfinder.com/data/icons/bitsies/128/Crown-128.png"
           width="20" height="20">
@@ -97,6 +102,10 @@
         </div>
         <br>
         <a class="userLocation"> San Diego, California</a>
+      </div>
+      <div class="logout">
+        <br>
+        <a onClick="logOut();"><span class="glyphicon glyphicon-log-out" style="color: #000;"></span><p class="logout">Logout</p></a>
       </div>
     </div>
 
