@@ -153,7 +153,7 @@ function getProfileInfo() {
       });
 
 
-      FB.api('/me', 'GET', {fields: 'picture.width(175).height(175)'}, function(response) {
+      FB.api('/me', 'GET', {fields: 'picture.width(150).height(150)'}, function(response) {
         console.log("response pic data url: " + response.picture.data.url);
 				document.getElementById('profPic').innerHTML = "<img src='" + response.picture.data.url + "'>";
 			});
