@@ -54,7 +54,7 @@
     </nav>
 
 
-   <div id = "container">
+   <div id = "container-fluid">
 
     <!--go back to explore food-->
     <div>
@@ -63,32 +63,55 @@
 
     <!--review page for specific dish after clicking on image-->
     <div id = "dish_info">
-      <h3 id = "restaurantName">{{restaurantName}}</h3>
-      <img src = "../{{imgURL}}" id = 'dishIMG'/>
-      <h3 id = "dish_name">{{name}}</h3>
-
-      <div id = "faces">
-          <div><i class = "em em-disappointed" id = "ab"></i><p  id = "dis"></p></div>
-          <div><i class = "em em-confused" id = "ab"></i> <p  id = "meh"></p></div>
-          <div><i class = "em em-smiley" id = "ab"></i><p  id = "yay"></p></div>
+      <div class="row">
+        <div class="col-xs-5 leftSide">
+          <img src = "../{{imgURL}}" id = 'dishIMG'/>
+          <div id = "faces">
+            <div><i class = "em em-disappointed" id = "ab"></i><p  id = "dis">{{dis}}</p></div>
+            <div><i class = "em em-confused" id = "ab"></i> <p  id = "meh">{{meh}}</p></div>
+            <div><i class = "em em-smiley" id = "ab"></i><p  id = "yay">{{yay}}</p></div>
+          </div>
+        </div>
+        <div class="col-xs-6 rightSide">
+          <p id = "restaurantName">{{restaurantName}}</p>
+          <p id = "dish_name">{{name}}</p>
+          <p id = "address">Address here</p>
+        </div>
       </div>
 
       <!--dislay good and bad hashtags-->
-      <div id = "hashtags">
 
-        <div class = "ups">
-          <div><i class = "em em-thumbsup" class = "thumbs"></i></div>
-          <div id = "u1">{{u1}}</div>
-          <div id = "u2">{{u2}}</div>
-          <div id = "u3">{{u3}}</div>
-        </div>
-        <div class = "downs">
-          <div><i class = "em em-thumbsdown" class = "thumbs"></i></div>
-          <div id = "d1">{{d1}}</div>
-          <div id = "d2">{{d2}}</div>
-          <div id = "d3">{{d3}}</div>
-        </div>
-      </div> <!--end of hashtag ratings-->
+      <div class="col-xs-12">
+        <ul class="list-group" id="hastags">
+          <li class="list-group-item">
+            <div class = "ups">
+              <div><span class="label label-default"><i class = "em em-thumbsup" class = "thumbs"></i>&nbsp;Likes</span></div><br><br>
+              <span class="label label-primary"><div id = "u1">{{u1}}</div></span>
+              <span class="label label-info"><div id = "u2">{{u2}}</div></span>
+              <span class="label label-info"><div id = "u3">{{u3}}</div></span>
+              <div id = "u4">{{u4}}</div>
+
+              <!--
+              {{#each dishes}}
+                {{#each ups}}
+                  <span class="label label-info">{{this}}</span>
+                {{/each}}
+              {{/each}}
+            -->
+
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class = "downs">
+              <div><span class="label label-default"><i class = "em em-thumbsdown" class = "thumbs"></i>&nbsp;Dislikes</span></div><br><br>
+              <span class="label label-danger"><div id = "d1">{{d1}}</div></span>
+              <span class="label label-warning"><div id = "d2">{{d2}}</div></span>
+              <span class="label label-warning"><div id = "d3">{{d3}}</div></span>
+              <div id = "d4">{{d4}}</div>
+            </div>
+          </li>
+        </ul> <!--end of hashtag ratings-->
+      </div>
     </div>
     <div id = "rate_btn">
         <a href = '/rate'><button>RATE IT</button></a>

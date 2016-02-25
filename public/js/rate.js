@@ -92,11 +92,15 @@ function loadDishReview()  {
     $('#u1').text(curr.u1);
     $('#u2').text(curr.u2);
     $('#u3').text(curr.u3);
+    //document.getElementById("#u4").innerHTML = "<span class='label label-info'>" + ups + "</span>";
+    //$("#u4").innerHTML = "<span class='label label-info'>" + ups + "</span>";
+//    $('#upTest').text(curr.ups);
+
     $('#d1').text(curr.d1);
     $('#d2').text(curr.d2);
     $('#d3').text(curr.d3);
     $('#dish_name').text(curr.dishName);
-    $('#restaurant').text(curr.restaurantName);
+    $('#restaurantName').text(curr.restaurantName);
 }
 
 

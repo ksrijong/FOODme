@@ -34,7 +34,7 @@ body{
 
 #faces div {
 	display: inline-block;
-	margin-right: 10px;
+	margin-left: 0px;
 }
 
 #ht_type div {
@@ -48,11 +48,8 @@ body{
 
 .ups div {
 	display: inline-block;
-	color: black;
-
+	color: #fff;
 }
-
-
 
 #dish_img {
 	height: 180px;
@@ -62,15 +59,44 @@ body{
 
 .downs div {
 	display: inline-block;
-	color: black;
+	color: #fff;
 
 }
 
 #dishIMG {
-	height: 200px;
-	width: 200px;
+	height: 150px;
+	width: 150px;
 }
 
 .thumbs {
 	width: 20px;
+}
+
+#restaurantName {
+	font-size: 25px;
+	padding-left: 0px;
+}
+
+#dish_name {
+	font-size: 15px;
+}
+
+#bottomNav {
+	margin-bottom: 25px;
+}
+
+#ab {
+	font-size: 27px;
+}
+
+.pull-right {
+	margin-right: 15px;
+}
+
+.leftSide {
+	margin-left: 5px;
+}
+
+.label {
+	font-size: 15px;
 }

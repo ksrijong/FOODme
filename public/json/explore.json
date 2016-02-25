@@ -1,6 +1,5 @@
 {
 	"dishes": [
-
 		{
 			"id": "0",
 			"dishName": "burger",
@@ -8,7 +7,10 @@
 			"imgURL": "food/burger.jpg",
 			"dis": "6",
 			"meh": "5",
-			"yay": "12",
+			"yay": "15",
+			"ups" : [
+				"savory", "foodgasm", "pattyonfleek"
+			],
 			"u1": "savory",
 			"u2": "foodgasm",
 			"u3": "pattyonfleek",
