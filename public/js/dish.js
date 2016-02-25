@@ -1,17 +1,17 @@
-$(document).ready(function() { 
+$(document).ready(function() {
 	console.log('dish.js connected!');
 
-	//get dishes json data 
+	//get dishes json data
     var dishes;
-    //for current dish 
+    //for current dish
     var curr;
     var i = 5;
 
-    //get JSON data with first 
+    //get JSON data with first
          $.getJSON('explore.json', function(data) {
         dishes = data;
         console.log("getJSON activated!");
-        
+
         curr = data.dishes[i];
         console.log(curr);
         var name = curr.name;
@@ -24,6 +24,6 @@ $(document).ready(function() {
         $('#yay').text(curr.yay);
         $('#restaurant').text(place);
         $('#dish_name').text(name);
-
+				$('#address').text(curr.address);
 });
 })

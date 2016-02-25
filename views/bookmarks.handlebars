@@ -52,12 +52,12 @@
     </nav>
 
    <div id = "container">
-
-    <h2>Bookmarked Dishes</h2>
+    <br><br>
+    <h2 style="color: black;">My Dishes</h2>
 
     {{#each bookmarks}}
-      <div class = "item">
-        <div id="cookies" class="bmk_dishes item1">
+      <div class = "item bmk_dishes item1">
+        <div id="clickable" onclick="window.location.href='/item'">
           <img src="{{imageURL}}" class="img-responsive" />
           <div id = "cookie_text" class = "bmk_test">
             <p>{{restaurantName}}</p>

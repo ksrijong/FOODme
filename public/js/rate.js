@@ -101,6 +101,7 @@ function loadDishReview()  {
     $('#d3').text(curr.d3);
     $('#dish_name').text(curr.dishName);
     $('#restaurantName').text(curr.restaurantName);
+    $('#address').text(curr.address);
 }
 
 

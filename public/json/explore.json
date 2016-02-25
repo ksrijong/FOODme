@@ -2,8 +2,9 @@
 	"dishes": [
 		{
 			"id": "0",
-			"dishName": "burger",
+			"dishName": "The Lounge Burger",
 			"restaurantName": "Burger Lounge",
+			"address": "1101 Wall Street, San Diego, CA 92037",
 			"imgURL": "food/burger.jpg",
 			"dis": "6",
 			"meh": "5",
@@ -22,25 +23,25 @@
 		},
 		{
 			"id": "1",
-			"dishName": "cookie_sandwich",
+			"dishName": "Cookie Sandwich Tower",
 			"restaurantName": "Baked Bear",
 			"imgURL": "food/cookie_sandwich.jpeg",
 			"dis": "6",
 			"meh": "5",
 			"yay": "12",
 			"u1": "brainfreeze",
-			"u2": "sweet",
+			"u2": "perfection",
 			"u3": "sugaroverload",
 			"u4":" ",
-			"d1": "n",
-			"d2": "o",
-			"d3": "p",
+			"d1": "stale",
+			"d2": "too sweet",
+			"d3": "small",
 			"d4":" "
 		},
 		{
 
 			"id": "2",
-			"dishName": "curry",
+			"dishName": "Coconut Fireball Curry",
 			"restaurantName": "Thai Place",
 			"imgURL": "food/curry.jpg",
 			"dis": "2",
@@ -50,15 +51,15 @@
 			"u2": "umami",
 			"u3": "wonderful",
 			"u4":" ",
-			"d1": "n",
-			"d2": "o",
-			"d3": "p",
+			"d1": "spicy",
+			"d2": "too creamy",
+			"d3": "americanized",
 			"d4":" "
 		},
 		{
 
 			"id": "3",
-			"dishName": "steak",
+			"dishName": "Prime Rib Eye",
 			"restaurantName": "Donovan's",
 			"imgURL": "food/steak.jpg",
 			"dis": "6",
@@ -68,15 +69,15 @@
 			"u2": "savory",
 			"u3": "OMFG",
 			"u4":" ",
-			"d1": "n",
-			"d2": "o",
-			"d3": "p",
+			"d1": "overcooked",
+			"d2": "fatty",
+			"d3": "small",
 			"d4":" "
 		},
 		{
 
 			"id": "4",
-			"dishName": "ribs",
+			"dishName": "Full Rib Rack",
 			"restaurantName": "Phil's BBQ",
 			"imgURL": "food/ribs.jpg",
 			"dis": "6",
@@ -86,16 +87,16 @@
 			"u2": "best",
 			"u3": "roast",
 			"u4":" ",
-			"d1": "n",
-			"d2": "o",
-			"d3": "p",
+			"d1": "salty",
+			"d2": "messy",
+			"d3": "burnt",
 			"d4":" "
 
 		},
 		{
 
 			"id": "5",
-			"dishName": "pizza",
+			"dishName": "Cheese Pizza",
 			"restaurantName": "Pizza Port",
 			"imgURL": "food/pizza.jpg",
 			"dis": "6",
@@ -104,10 +105,10 @@
 			"u1": "cheesy",
 			"u2": "warm",
 			"u3": "happy",
-			"u4":" ",
-			"d1": "n",
-			"d2": "o",
-			"d3": "p",
+			"u4": "",
+			"d1": "heart attack",
+			"d2": "oily",
+			"d3": "dry",
 			"d4":" "
 		}
 	]

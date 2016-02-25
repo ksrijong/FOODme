@@ -73,7 +73,7 @@ $(document).ready(function() {
         'address' : 'SD, CA'
       }
       console.log("BMK push testing...")
-      console.log(newBMK);      
+      console.log(newBMK);
 
       $.get(
         "/addBookmark",
@@ -81,7 +81,7 @@ $(document).ready(function() {
           'dishName' : curr.dishName,
           'restaurantName' : curr.restaurantName,
           'imgURL' : curr.imgURL,
-          'address' : 'SD, CA'
+          'address' : curr.address
         }
       );
     })

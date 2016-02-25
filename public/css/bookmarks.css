@@ -7,15 +7,15 @@
 
 }
 
-.item div {
+.item >div > div {
 	display: inline-block;
 }
 
-.item p {
+.item div>p {
 	font-size: 10px;
 }
 
-.bmk_dishes img {
+.bmk_dishes > div >  img {
 	height: 75px;
 	width: 75px;
 	position: relative;
