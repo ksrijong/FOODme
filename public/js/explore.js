@@ -66,6 +66,7 @@ $(document).ready(function() {
     $('#book_button').click(function() {
       console.log(bookmarks);
       alert(curr.dishName + " bookmarked!");
+      ga("send", "event", "bookmark", "click");
       var newBMK = {
         'dishName' : curr.dishName,
         'restaurantName' : curr.restaurantName,
